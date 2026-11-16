@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    border: 1px solid #2f5aa8;
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    font-weight: normal;
+    font-size: 34px;
+    margin: 10px 0 0;
+}
+.names {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+main a {
+    color: #1e88e5;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+main a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-weight: normal;
+    margin: 5px 0 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+th {
+    text-align: left;
+    background-color: #f2f2f2;
+    padding: 8px;
+}
+td {
+    padding: 6px 8px;
+    border-top: 1px solid #ddd;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+td form {
+    margin: 0;
+}
+
+#movie_form label {
+    display: inline-block;
+    width: 120px;
+    font-size: 13px;
+}
+#movie_form input[type="text"],
+#movie_form input[type="date"] {
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#movie_form input[type="submit"] {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.error {
+    color: #c62828;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
