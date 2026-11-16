@@ -18,7 +18,7 @@
         <td><?php echo htmlspecialchars($movie['Genre']); ?></td>
         <td>
             <form action="index.php" method="post">
-                <input type="hidden" name="action" value="show_update_form">
+                <input type="hidden" name="action" value="show_edit_form">
                 <input type="hidden" name="movie_id" value="<?php echo $movie['MovieID']; ?>">
                 <input type="submit" value="Edit">
             </form>
