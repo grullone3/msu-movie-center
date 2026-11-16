@@ -1,5 +1,5 @@
 <?php
-ini_set('Display_errors', 1);
+ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 require('database.php');
@@ -36,5 +36,11 @@ if ($action === 'list_movies') {
         add_movie($title, $release_date, $genre);
         header("Location: index.php");
     }
+} else if ($action === "delete_movie") {
+    $movie_id = filter_input(INPUT_POST, 'movie_id', FILTER_VALIDATE_INT);
+    if ($movie_id !== NULL && $movie_id !== FALSE) {
+        delete_movie($movie_id);
+    }
+    header("Location: index.php");
 }
 ?>
